@@ -16,6 +16,9 @@
     height: 303px;
     outline: 1px solid #000000;
     background-color: #1d4671;
+    background-image: url(../images/sliderBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #content {
@@ -35,9 +38,22 @@
     margin: 0 auto;
 }
 
+   
 #iHeader {
     height: 177px;
     outline: 1px solid #cc0000;
+    position: relative;
+    
+}
+
+.logo {
+    outline: 1px solid #FF8000;
+    width: 390px;
+    height: 177px;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    
+    
 }
 
 #iSlider {
@@ -55,3 +71,49 @@
     outline: 1px solid #FF8000;
 }
 
+/* Начало блока header */
+
+#nav {
+    width: 900px;
+    height: 46px;
+    background-image: url(../images/navBg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    
+}
+
+#nav li {
+    float: left;
+    outline: 0px solid #ccc;
+    height: 46px;
+    background-image: url(../images/navDel.png);
+    background-repeat: no-repeat;
+}
+
+#nav li a {
+    outline: 0px solid #FF8000;
+    display:block;
+
+    height: 29px;
+    padding: 17px 18px 0 18px;
+    text-decoration: none;
+    font: bold 12px Arial, sans-serif;
+    color: #79a100;
+    text-transform: uppercase;
+}
+
+#nav li.first  {
+    background-image: none;
+}
+
+#nav li.last a {
+    padding-right: 0;
+}
+
+#nav li a.active, #nav li a:hover {
+    color: #2c789c;
+}
+
+ /* Конец блока header */
